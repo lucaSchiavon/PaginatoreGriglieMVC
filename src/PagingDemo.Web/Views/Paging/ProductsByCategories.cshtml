@@ -1,0 +1,58 @@
+﻿@using System.Linq
+@using PagingDemo.Web.Models
+@using PagingDemo.Web.ViewModels
+
+@model ViewByCategoriesViewModel
+@{
+    ViewBag.Title = "Browse products by categories";
+}
+<h2>@ViewBag.Title</h2>
+<form class="form-inline" role="form" asp-controller="Paging" asp-action="ViewByCategories" method="get" asp-antiforgery="false">
+    Select category or categories:
+    <ul>
+        @foreach (var category in Model.AvailableCategories)
+        {
+            <li>
+                <label>
+                    <input type="checkbox" name="categories" value="@category" @if (Model.Categories.Any(c => c == category)) { <text> checked="checked" </text>   } />
+                    @category
+                </label>
+            </li>}
+    </ul>
+    <input type="submit" value="Browse" class="btn btn-default" />
+
+</form>
+   
+    @if (Model.Products.Data.Any())
+    {
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.Products.Data)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Category</td>
+                    </tr>}
+            </tbody>
+        </table>
+        <cs-pager cs-paging-pagesize="@Model.Products.PageSize"
+                  cs-paging-pagenumber="@Model.Products.PageNumber"
+                  cs-paging-totalitems="@Model.Products.TotalItems"
+                  cs-pagenumber-param="page"
+                  asp-controller="Paging"
+                  asp-action="ViewByCategories"
+                  asp-route-categories="@Model.Categories.ToCsv()"
+                  asp-route-pagesize="@Model.Products.PageSize"
+                  cs-first-page-text="First"
+                  cs-last-page-text="Last"
+                  cs-previous-page-text="Prev"
+                  cs-next-page-text="Next"></cs-pager>
+
+            
+    }

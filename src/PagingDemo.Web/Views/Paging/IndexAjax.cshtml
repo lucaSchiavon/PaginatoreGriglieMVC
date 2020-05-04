@@ -1,0 +1,43 @@
+﻿@using cloudscribe.Web.Pagination
+@using PagingDemo.Web.ViewModels
+@using PagingDemo.Web.Models
+
+@model ProductListViewModel
+@{
+    ViewBag.Title = "Browse all products (ajax)";
+}
+<h2>@ViewBag.Title</h2>
+<div id="gridcontainer">
+    <partial name="_ProductGrid" model="Model" />
+</div>
+<div id="loadingIndicator" style="background-color:cadetblue; display:none">
+    <p>Loading...</p>
+</div>
+
+@section Scripts {
+
+<script type="text/javascript">
+        
+        function PagerRequestSuccess(data) {
+            //console.log("This is the OnSuccessCallback: " + data);
+            console.log("This is the OnSuccessCallback");
+        }
+        function PagerRequestFailure(request, error) {
+            console.log("This is the OnFailure Callback:" + error);
+        }
+        
+</script>
+
+    <environment names="Development">
+        <script src="~/js/jquery.unobtrusive-ajax.js"></script>
+        
+        <script src="~/jsdev/cloudscribe-modaldialog-bootstrap.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/jquery.unobtrusive-ajax.min.js"></script>
+        
+        <script src="~/jsdev/cloudscribe-modaldialog-bootstrap.js"></script>
+    </environment>
+
+
+}

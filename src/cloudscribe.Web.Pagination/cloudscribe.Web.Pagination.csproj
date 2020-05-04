@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>an AspNetCore TagHelper for pagination</Description>
+    <Copyright>Source Tree Solutions</Copyright>
+    <Version>3.0.0</Version>
+    <Authors>Joe Audette</Authors>
+    <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
+    <PackageTags>cloudscribe;mvc;pagination;navigation;bootstrap</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageIconUrl>https://raw.githubusercontent.com/joeaudette/cloudscribe.Web.Pagination/master/cloudscribe-icon-32.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/joeaudette/cloudscribe.Web.Pagination</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/cloudscribe/cloudscribe.Web.Pagination.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <ProjectReference Include="..\cloudscribe.Pagination.Models\cloudscribe.Pagination.Models.csproj" />
+  </ItemGroup>
+
+  
+</Project>

@@ -1,0 +1,9 @@
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\bin\Debug\netstandard1.6\cloudscribe.Pagination.Models.deps.json
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\bin\Debug\netstandard1.6\cloudscribe.Pagination.Models.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\bin\Debug\netstandard1.6\cloudscribe.Pagination.Models.pdb
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\obj\Debug\netstandard1.6\cloudscribe.Pagination.Models.csprojAssemblyReference.cache
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\obj\Debug\netstandard1.6\cloudscribe.Pagination.Models.csproj.CoreCompileInputs.cache
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\obj\Debug\netstandard1.6\cloudscribe.Pagination.Models.AssemblyInfoInputs.cache
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\obj\Debug\netstandard1.6\cloudscribe.Pagination.Models.AssemblyInfo.cs
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\obj\Debug\netstandard1.6\cloudscribe.Pagination.Models.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\GIT\cloudscribe.Web.Pagination\src\cloudscribe.Pagination.Models\obj\Debug\netstandard1.6\cloudscribe.Pagination.Models.pdb
